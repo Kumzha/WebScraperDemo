@@ -1,4 +1,5 @@
 ﻿using MySqlConnector;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace WebScraperDemo
                         Console.Write(data);
             */
 
-/*            for (int i = 0; i < NumberOfFilms; i++)
+            for (int i = 0; i < NumberOfFilms; i++)
             {
                 string sqlInsert = "INSERT INTO films (name, rating, release_date, number_of_votes) VALUES (@name, @rating, @releaseDate, @numOfVotes)";
 
@@ -48,7 +49,9 @@ namespace WebScraperDemo
 
                     InsertIntoFilms.ExecuteNonQuery();
                 }
-            }*/
+            }
+
+
 
 
         }

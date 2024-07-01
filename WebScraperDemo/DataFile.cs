@@ -10,7 +10,7 @@ namespace WebScraperDemo
     public class DataFile
     {
         public static int NumberOfElements { get; set; } = 0;
-        public static string FilterString(string input)
+        public static string FilterNameString(string input)
         { 
             string pattern = @"^\d+\.\s*";
             string result = Regex.Replace(input, pattern, string.Empty);
